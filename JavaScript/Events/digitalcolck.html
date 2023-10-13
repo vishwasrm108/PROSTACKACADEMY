@@ -1,0 +1,14 @@
+<html>
+    <head>Digtal clock</head>
+    <title>clock</title>
+    <body>
+        <h1 id="xyz"></h1>
+        <script>
+           
+        setInterval(function(){
+              var ct = new Date().toLocaleTimeString()
+            document.getElementById('xyz').innerHTML=ct
+        },1000)
+        </script>
+    </body>
+</html>
