@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="vishwas" content="praveen">
+<meta name="keywords" content="keyword1, keyword2, keyword3">
+
+    <title>Even or Odd Checker</title>
+</head>
+<body>
+    <h1>Even or Odd Checker</h1>
+    <p>Enter a number to check if it's even or odd:</p>
+    <input type="text" id="numberInput">
+    <button onclick="checkEvenOrOdd()">Check</button>
+   <h2 id="result"></h2>
+
+    <script>
+        function checkEvenOrOdd() {
+            // Get the user's input from the input field
+            var numberInput = document.getElementById("numberInput").value;
+            
+            // Parse the input to a number
+            var number = parseInt(numberInput);
+
+            // Check if the input is a valid number
+            if (!isNaN(number)) {
+                // Check if the number is even or odd
+                if (number % 2 === 0) {
+                    document.getElementById("result").innerHTML = number + " is even.";
+                } else {
+                    document.getElementById("result").innerHTML = number + " is odd.";
+                }
+            } else {
+                // Display an error message if the input is not a valid number
+                document.getElementById("result").innerHTML = "Please enter a valid number.";
+            }
+        }
+    </script>
+</body>
+</html>
