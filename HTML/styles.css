@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Create 3 columns of 100px each */
+    grid-gap: 10px; /* Add a 10px gap between grid items */
+}
+
+.grid-item {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+}
+
+.item1 {
+    grid-area: 1 / 1 / 2 / 2; /* Define the grid area for this item */
+}
+
+/* Define grid areas for the other items (item2 through item9) similarly */
