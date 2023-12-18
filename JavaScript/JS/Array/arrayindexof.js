@@ -8,3 +8,4 @@ console.log(bikes);
 console.log(bikes.indexOf("hero"));
 // finding index of element which is not in array
 console.log(bikes.indexOf("BMW"));
+console.log(bikes.lastIndexOf("hero"));

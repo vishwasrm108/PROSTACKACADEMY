@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Navigation</title>
+  <style>
+    .content {
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showContent('home')">Home</a></li>
+      <li><a href="#" onclick="showContent('about')">About</a></li>
+      <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="home" class="content active">
+    <h2>Welcome to the Home Page</h2>
+    <p>This is the home page content.</p>
+  </div>
+
+  <div id="about" class="content">
+    <h2>About Us</h2>
+    <p>Learn more about our company.</p>
+  </div>
+
+  <div id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us.</p>
+  </div>
+
+  <script>
+    function showContent(contentId) {
+      // Hide all content
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      // Show the selected content
+      const selectedContent = document.getElementById(contentId);
+      selectedContent.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
