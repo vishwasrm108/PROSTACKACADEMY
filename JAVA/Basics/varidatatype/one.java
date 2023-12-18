@@ -5,6 +5,6 @@ class One{
         One t1=new One();
         System.out.println(c);
         System.out.println(One.c);
-        System.out.println(t1);
+        System.out.println(t1.c);
     }
 }
