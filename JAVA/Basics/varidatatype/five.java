@@ -3,9 +3,9 @@
     public static void main(String[] args){
          //How to read / access instance variable
       //we can access using object
-      Five t1=new Five();
-      Five t2=new Five();
-      Five t3=new Five();
+      five t1=new five();
+      five t2=new five();
+      five t3=new five();
       System.out.println(t1.b);
       System.out.println(t2.b);
       t1.b=200;

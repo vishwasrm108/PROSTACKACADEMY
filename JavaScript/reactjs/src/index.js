@@ -1,4 +1,4 @@
 import Reactdom from 'react-dom'
-import App from './app'
+import LoginForm from './app'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-Reactdom.render(<App/>,document.getElementById("root"))
+Reactdom.render(<LoginForm/>,document.getElementById("root"))
